@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:background="#D8FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 설정 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/billabong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Setting"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+
+    <!-- 테마 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#16FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="테마"
+            android:textStyle="bold"
+            android:textColor="#020F66"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <!-- 테마변경 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:gravity="center_vertical"
+            android:text="테마변경"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+    <!-- 검색설정 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#16FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="검색설정"
+            android:textStyle="bold"
+            android:textColor="#020F66"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <!-- 검색설정 변경 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#1D7E5959">
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="성인영화 포함"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(카카오톡 로그인으로 성인인증 시 사용가능)"
+                    android:textColor="#585858"
+                    android:textSize="9sp"/>
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchAdult"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp" />
+
+            <LinearLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 백업 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#16FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="백업"
+            android:textStyle="bold"
+            android:textColor="#020F66"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnBackupSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:gravity="center_vertical"
+            android:text="백업 하기"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnBackupGet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:gravity="center_vertical"
+            android:text="백업 받기"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- 문의/의견 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#16FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="문의/의견"
+            android:textStyle="bold"
+            android:textColor="#020F66"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <!-- 메일 보내기 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:gravity="center_vertical"
+            android:text="메일 보내기"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <!-- 어플리케이션 정보 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#16FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="어플리케이션정보"
+            android:textColor="#020F66"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <!-- 버전정보 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:gravity="center_vertical"
+            android:text="Movie Diary ver.1.0.0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- 데이터 초기화 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#16FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="초기화"
+            android:textColor="#020F66"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <!-- 데이터 초기화 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D7E5959"
+            android:gravity="center_vertical"
+            android:text="다이어리 초기화"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#1D7E5959"
+            android:gravity="center"
+            android:text="Logout"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

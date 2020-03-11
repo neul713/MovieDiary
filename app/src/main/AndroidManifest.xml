@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.moviediary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    //김하늘 카메라 권한요청
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:name=".util.App">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //처음로그인할때 뜨는 액티비티
+        <activity android:name=".UserJoinActivity">
+        </activity>
+        //프로필 수정 액티비티
+        <activity
+            android:name=".ProfileEdit"
+            android:label="프로필 수정 액티비티">
+        </activity>
+        //김하늘 사진권한요청
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.user.moviediary.fragment.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/profile_image_file_path" />
+        </provider>
+
+        //장한나림 카카오톡 키값요청
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flLoginMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llLoginMain"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/billabong"
+            android:gravity="center"
+            android:text=" Movie Diary"
+            android:textSize="60sp" />
+
+        <ImageButton
+            android:id="@+id/ibLoginDefault"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/login_default"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/ibLoginKakao"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/login_kakao" />
+
+        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/loginKakaoReal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

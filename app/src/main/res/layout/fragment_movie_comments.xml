@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="-50dp" >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+        <TextView
+            android:id="@+id/totalReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review : 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical|center"/>
+
+        <ImageButton
+            android:id="@+id/ibClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_cancel" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff">
+
+        <ImageButton
+            android:id="@+id/ibBefore"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/ic_before" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="자료 출처 : Naver영화"
+            android:textColor="#9b9b9b"
+            android:textSize="11dp"/>
+
+        <ImageButton
+            android:id="@+id/ibNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_next" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

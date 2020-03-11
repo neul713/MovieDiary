@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="다이어리 관리"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnDiaryEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="현재 다이어리 수정"
+        android:textSize="17sp" />
+    <Button
+        android:id="@+id/btnDiaryDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="현재 다이어리 삭제"
+        android:textColor="#de0a0a"
+        android:textSize="17sp" />
+</LinearLayout>
